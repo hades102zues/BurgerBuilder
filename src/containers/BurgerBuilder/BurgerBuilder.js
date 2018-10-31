@@ -119,7 +119,7 @@ const INGREDIENT_PRICES = {
       }
       
       queryParams.push('price=' + this.state.totalPrice);
-      let queryString = queryParams.join('&');
+      const queryString = queryParams.join('&');
 
       this.props.history.push({
         pathname:'/checkout',
